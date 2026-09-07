@@ -1,0 +1,358 @@
+@font-face {
+    font-family: ISB;
+    src: url(../font/IranSans/IRANSansXFaNum-Bold.ttf);
+}
+@font-face {
+    font-family: ISM;
+    src: url(../font/IranSans/IRANSansXFaNum-Medium.ttf);
+}
+@font-face {
+    font-family: ISR;
+    src: url(../font/IranSans/IRANSansXFaNum-Regular.ttf);
+}
+@font-face {
+    font-family: YB;
+    src: url(../font/YekanBakh/TTF/YekanBakhFaNum-Bold.ttf);
+}
+@font-face {
+    font-family: YL;
+    src: url(../font/YekanBakh/TTF/YekanBakhFaNum-Light.ttf);
+}
+@font-face {
+    font-family: YR;
+    src: url(../font/YekanBakh/TTF/YekanBakhFaNum-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    
+}
+
+.resume-bg{
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+}
+
+.sidbar{
+    width: 30%;
+    background-color: #283142;
+}
+
+.content{
+    width: 70%;
+    background-color: #f2f2f2;
+}
+
+.imgbox{
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    border: 10px solid rgba(0 , 0 , 0 , 0.25);
+    top: 50px;
+    left: 185px;
+}
+
+
+.imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sidbar h1{
+    position: relative;
+    color: white;
+    margin-top: 175px;
+    margin-right: 25px;
+    display: flex;
+    justify-content: end ;
+    align-items: center;
+    font-family: YB;
+}
+
+.sidbar h1::after{
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    right: 0;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+
+}
+
+.sidbar p{
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 20px;
+    line-height: 35px;
+    font-family: ISM;
+    direction: rtl;
+}
+
+.skill{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin:18px 0;
+}
+
+.skill-info{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#fff;
+    margin-left: 70px;
+}
+
+.skill-info img{
+    width: 50px;
+}
+
+.skill-info span{
+    font-size:22px;
+}
+
+.level{
+    display:flex;
+    gap:10px;
+    margin-right: 22px;
+}
+
+.level span{
+    width:16px;
+    height:16px;
+    border-radius:50%;
+    background:#4c5565; /* دایره خاموش */
+}
+
+.level span.active{
+    background:#f1f1f1; /* دایره روشن */
+}
+
+.conection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.conection img{
+    width: 400px;
+}
+
+.content .name h1{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    direction: rtl;
+    font-size: 50px;
+    font-family: YB;
+    margin-top: 60px;
+    margin-right: 50px;
+}
+
+.content .name p{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    direction: rtl;
+    font-size: 30px;
+    font-family: ISM;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+.information h1{
+    position: relative;
+    color: black;
+    margin-top: 90px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: end ;
+    align-items: center;
+    font-family: YB;
+}
+
+.information h1::after{
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    right: 0;
+    width: 60px;
+    height: 3px;
+    background: black;
+}
+
+.information h5{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 50px;
+    font-family: ISM;
+    font-size: 22px;
+    opacity: 0.55;
+    font-weight: normal;
+}
+
+.information h6{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 5px;
+    margin-right: 50px;
+    font-family: ISR;
+    direction: rtl;
+    font-size: 25px;
+    font-weight: normal;
+
+}
+
+.work h1{
+    position: relative;
+    color: black;
+    margin-top: 120px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: end ;
+    align-items: center;
+    font-family: YB;
+}
+
+.work h1::after{
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    right: 0;
+    width: 60px;
+    height: 3px;
+    background: black;
+}
+
+.work h6{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    direction: rtl;
+    margin-right: 50px;
+    margin-top: 40px;
+    font-size: 25px;
+    font-family: ISM;
+    font-weight: normal;
+}
+
+#HM{
+    margin-top: 290px;
+}
+
+#CH{
+    margin-top: 390px;
+}
+
+.project-links{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    direction: rtl;
+    margin-left: 300px;
+}
+
+.project-btn{
+    width: 200px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid #1f2c4c;
+    border-radius: 20px;
+
+    text-decoration: none;
+    color: #1f2c4c;
+    font-family: ISM;
+    font-size: 25px;
+
+    transition: .3s;
+}
+
+.project-btn:hover{
+    background: #1f2c4c;
+    color: white;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.home img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.course h1{
+    position: relative;
+    color: black;
+    margin-top: 270px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: end ;
+    align-items: center;
+    font-family: YB;
+}
+
+.course h1::after{
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    right: 0;
+    width: 60px;
+    height: 3px;
+    background: black;
+}
+
+.course span{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    direction: rtl;
+    margin-top: 100px;
+    margin-right: 50px;
+    font-size: 25px;
+    font-family: ISM;
+    line-height: 0;
+}
+
+
+
+
+
